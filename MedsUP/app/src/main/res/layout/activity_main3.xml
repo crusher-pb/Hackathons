@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group8"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="235dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="MEDSUP"
+        android:textAllCaps="true"
+        android:textColor="#800B0A0A"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text=" Stage 2/2"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <EditText
+        android:id="@+id/singup2n0"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="380dp"
+        android:background="#66FF0000"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="Contact Number"
+        android:drawableStart="@drawable/ic_baseline_contact_phone_24"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textColorHighlight="#8003A9F4"
+        android:textColorLink="#000000"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signup2dob"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="440dp"
+        android:background="#66FF0000"
+        android:ems="10"
+        android:hint="Date of Birth"
+        android:drawableStart="@drawable/ic_baseline_date_range_24"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textColorHighlight="#8003A9F4"
+        android:textColorLink="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signup2ques"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="500dp"
+        android:background="#66FF0000"
+        android:ems="10"
+        android:hint="Security Question"
+        android:drawableStart="@drawable/ic_baseline_assignment_ind_24"
+        android:lines="4"
+        android:inputType="textShortMessage"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textColorHighlight="#8003A9F4"
+        android:textColorLink="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signup2ans"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="560dp"
+        android:background="#66FF0000"
+        android:ems="10"
+        android:hint="Answer"
+        android:drawableStart="@drawable/ic_baseline_question_answer_24"
+        android:inputType="textShortMessage"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textColorHighlight="#8003A9F4"
+        android:textColorLink="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/backtostage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="16dp"
+        android:drawableStart="@drawable/ic_baseline_arrow_back_ios_24"
+        android:text="Back"
+        android:textColor="#F44336"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/skipsignup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="16dp"
+        android:text="Skip"
+        android:textColor="#F44336"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/finishsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="16dp"
+        android:text="Finish"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:textColor="#F44336"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group8"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="235dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="MEDSUP"
+        android:textAllCaps="true"
+        android:textColor="#800B0A0A"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text=" Stage 1/2"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <EditText
+        android:id="@+id/singupname"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="380dp"
+        android:background="#66FF0000"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="Username"
+        android:drawableStart="@drawable/ic_baseline_account_box_24"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textColorHighlight="#8003A9F4"
+        android:textColorLink="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signupemail"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="440dp"
+        android:background="#66FF0000"
+        android:ems="10"
+        android:hint="E-mail"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textColorHighlight="#8003A9F4"
+        android:textColorLink="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signuppass"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="500dp"
+        android:background="#66FF0000"
+        android:ems="10"
+        android:enabled="true"
+        android:hint="Password"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:inputType="text|textPassword"
+        android:requiresFadingEdge="vertical"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textColorHighlight="#8003A9F4"
+        android:textColorLink="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/signupcpass"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="560dp"
+        android:background="#66FF0000"
+        android:ems="10"
+        android:enabled="true"
+        android:hint="Confirm Password"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:inputType="text|textPassword"
+        android:requiresFadingEdge="vertical"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textColorHighlight="#8003A9F4"
+        android:textColorLink="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/sptolp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="620dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Already have an account?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tostage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:textColor="#F44336"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

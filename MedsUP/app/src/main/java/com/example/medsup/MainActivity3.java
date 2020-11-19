@@ -5,28 +5,27 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity3 extends AppCompatActivity {
 
-    TextView su;
+    TextView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main3);
 
-        su = (TextView) findViewById(R.id.gotosignup);
-        su.setOnClickListener(new View.OnClickListener(){
+        back = (TextView) findViewById(R.id.backtostage1);
+        back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openSignUp();
+                openStage1();
             }
         });
     }
 
-    public void openSignUp(){
+    public void openStage1(){
         Intent intent = new Intent(this, MainActivity2.class);
         startActivity(intent);
     }
